@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+   font-size:  100%;
+   background-image: url(background.jpg);
+   background-attachment: fixed;
+   background-repeat: no-repeat;
+   background-size: cover;
+
+}
+body{
+    min-height: 100vh;
+    width: 100vw;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+  
+    min-height: 100vh;
+   margin: 5rem;
+    /* width: 100vw; */
+    border-radius: .6rem;
+   overflow: hidden;
+   max-width: 100%;
+    background-color: #fff;
+}
+.header{
+   
+    font-weight: bold;
+    text-align: center;
+    padding: 1rem;
+    /* background-color: #74ebd5; */
+    background: linear-gradient(to right , #89facb,#6f89fa);
+    width: 100%;
+    background-size: cover;
+    border-radius: .6rem;
+   color: #222;
+   text-transform: uppercase;
+}
+.form{
+    padding: 2rem 4rem;
+}
+.form-control,.form-control-btn {
+    padding: 1.5rem 1.5rem 0rem 1rem ;
+   font-size: 1.5rem;
+   position: relative;
+}
+input{
+    width: 100%;
+    font-size: 1rem;
+    padding: .8rem;
+    border-radius: .3rem;
+}
+.form-control i{
+    position: absolute;
+    visibility: hidden;
+    right: 1.9rem;
+    top: 3.9rem;
+}
+.form-control small{
+    /* visibility: hidden; */
+    color: #e74c3e;
+    visibility:hidden;
+}
+.form-control.error small{
+    visibility: visible;
+}
+.form-control.success i.fa-check-circle{
+    color: #2ecc71;
+    visibility: visible;
+}
+.form-control.error i.fa-exclamation-circle{
+    color: #e74c3e;
+    visibility: visible;
+}
+.form-control input:focus{
+    border-color:#777;
+}
+.form-control.success input{
+    border-color: #2ecc71;
+}
+.form-control.error input{
+    border-color: #e74c3e;
+}
+.btn{
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    background: linear-gradient(to right , #89facb,#6f89fa);
+   
+}
+.btn:hover{
+    background: linear-gradient(to right , #74ebd5,#9face6);
+   
+    cursor: pointer;
+}
+
+    @media (max-width:998px){
+        html{
+          font-size: 75.5%;
+          color: rgb(0, 0, 0);
+        }
+    }
+    @media (max-width:778px){
+        html{
+          font-size: 58%;
+          color: rgb(0, 0, 0);
+        }
+    }
